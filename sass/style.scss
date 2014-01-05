@@ -1,2 +1,88 @@
 @charset "UTF-8";
 
+@import "compass";
+
+/*------------------------------------*\
+	compass variables
+\*------------------------------------*/
+$main-color: #d54857;
+$accent-color: adjust-hue($main-color, 200);
+$base-color: #efefef;
+
+*{
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+body{
+	font-size: 13px;
+	font-family: sans-serif;
+}
+
+/*------------------------------------*\
+    header
+\*------------------------------------*/
+header{
+	width: 100%;
+	height: auto;
+	padding: 0 0 30px 0;
+	color: #fff;
+	background-color: $main-color;
+	background-size: cover;
+	
+	.header-inner{
+		width: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+		padding: 0 30px;
+		
+		.header-contents{
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			
+			h1{
+				font-family: "Play", sans-serif;
+				font-weight: 700;
+				font-size: 400%;
+				padding: 20px 0;
+			}
+		}
+	
+		.img-box{
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			background-color: $base-color;
+			@include box-shadow(0 2px 5px darken($main-color, 25%));
+			
+			img{
+				width: 100%;
+				height: auto;
+				padding: 30px;
+			}
+		}
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    .contents
+\*------------------------------------*/
+
+
+
+
+
+/*------------------------------------*\
+    footer
+\*------------------------------------*/
+
+
+
+
+
